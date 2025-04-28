@@ -42,7 +42,47 @@
         background-color: #ffffff;
       }
 
+header {
+  background-color: #f0f4f5;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
 
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .site-title {
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-left: 25px;
+}
+
+header nav ul li a {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+header nav ul li a:hover {
+  color: #007bff;
+}
       h1 {
         font-size: 3rem; /* Larger heading */
         font-weight: 700;  /* Use 700 for the boldest weight */

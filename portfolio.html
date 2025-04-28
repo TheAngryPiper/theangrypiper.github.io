@@ -119,52 +119,107 @@
             </div>
         </header>
         <main>
-            <section id="home" class="flex flex-col md:flex-row items-center justify-center py-20 md:py-32 lg:py-40 gap-8">
-                <div class="text-center md:text-left animate-slide-in">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 tracking-tight">
-                        Hi, I'm <span class="text-primary">Your Name</span>
-                    </h1>
-                    <p class="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-                        I'm a <span class="font-semibold text-primary">Web Developer</span> passionate about creating beautiful,
-                        functional, and user-friendly websites and applications.
-                    </p>
-                    <a href="#projects" class="bg-primary text-primary-foreground hover:bg-primary/90 transition-colors duration-300 rounded-lg px-8 py-3 text-lg flex items-center gap-2">
-                        View My Work
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right w-5 h-5"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
-                    </a>
-                </div>
-                <div class="rounded-full overflow-hidden border-4 border-primary/50 shadow-lg max-w-[250px] md:max-w-[300px] animate-slide-in" style="animation-delay: 0.2s;">
-                    <img src="https://placehold.co/400x400" alt="Your Name" class="w-full h-full object-cover">
-                </div>
-            </section>
-            <section id="about" class="py-20 md:py-32 lg:py-40 bg-secondary">
-                <div class="container mx-auto px-6 md:px-8 lg:px-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
-                        About Me
-                    </h2>
-                    <div class="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto text-center">
-                        <p class="mb-4">
-                            Hello! My name is Your Name, and I'm a web developer based in Your Location. I have a passion for creating engaging
-                            and effective online experiences.
-                        </p>
-                        <p class="mb-4">
-                            I have experience in a variety of web technologies, including React, Node.js, and more. I enjoy turning complex problems
-                            into simple, beautiful, and intuitive solutions.
-                        </p>
-                        <p>
-                            When I'm not coding, you can find me [Your Hobbies/Interests]. I'm always eager to learn new things and collaborate with
-                            like-minded individuals.
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <section id="projects" class="py-20 md:py-32 lg:py-40">
-                <div class="container mx-auto px-6 md:px-8 lg:px-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
-                        Projects
-                    </h2>
-                </div>
-            </section>
+            <section id="home" class="hero-section">
+  <div class="container">
+    <div class="intro-text">
+      <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+      <p>I'm a <span class="highlight">Web Developer</span> passionate about creating beautiful, functional, and user-friendly websites and applications.</p>
+      <a href="#projects" class="button">View My Work</a>
+    </div>
+    <div class="profile-image">
+      <img src="https://placehold.co/400x400" alt="Your Name" />
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about-section">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>Hello! My name is Your Name, and I'm a web developer based in Your Location. I have a passion for creating engaging and effective online experiences.</p>
+    <p>I have experience in a variety of web technologies, including React, Node.js, and more. I enjoy turning complex problems into simple, beautiful, and intuitive solutions.</p>
+    <p>When I'm not coding, you can find me [Your Hobbies/Interests]. I'm always eager to learn new things and collaborate with like-minded individuals.</p>
+  </div>
+</section>
+
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="https://placehold.co/600x400" alt="Project 1" />
+        <h3>Project 1</h3>
+        <p>A brief description of Project 1. This project was built using React and Node.js</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://placehold.co/600x400" alt="Project 2" />
+        <h3>Project 2</h3>
+        <p>A brief description of Project 2. This project was built for a client.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="https://placehold.co/600x400" alt="Project 3" />
+        <h3>Project 3</h3>
+        <p>A brief description of Project 3. This project was a personal project.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="blog-section">
+  <div class="container">
+    <h2>Blog</h2>
+    <div class="blog-grid">
+      <div class="blog-post-card">
+        <h3>My First Blog Post</h3>
+        <p class="date">2024-07-28</p>
+        <p>An introduction to my blog and my thoughts on web development.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="blog-post-card">
+        <h3>The Importance of Accessibility</h3>
+        <p class="date">2024-07-25</p>
+        <p>Discussing why web accessibility is crucial for all users.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="blog-post-card">
+        <h3>New React Hooks You Should Know</h3>
+        <p class="date">2024-07-21</p>
+        <p>A rundown of the latest React Hooks and how to use them.</p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resume" class="resume-section">
+  <div class="container">
+    <h2>Resume</h2>
+    <p>Here's a summary of my work experience and education. For more details, you can view the full resume.</p>
+    <div class="resume-content">
+      <h4>Work Experience</h4>
+      <p><strong>Company Name</strong> - *Job Title* (2020 - Present) <br/> Describe your responsibilities and achievements.</p>
+      <p><strong>Company Name</strong> - *Job Title* (2018 - 2020) <br/> Describe your responsibilities and achievements.</p>
+      <h4>Education</h4>
+      <p><strong>University Name</strong> - *Degree* (2014 - 2018)</p>
+    </div>
+    <a href="#" class="button outline" target="_blank">View Full Resume</a>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me via email or connect with me on social media. I'm always open to new opportunities and collaborations.</p>
+    <p><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <div class="social-links">
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+    </div>
+  </div>
+</section>
         </main>
     </div>
 </body>

@@ -45,7 +45,19 @@
     agent-id="e96c2e8f-6415-49f0-b9b8-2edb7e2cea91"
     language-code="en">
   </df-messenger>
-
+  <script>
+    function openChat() {
+      const messenger = document.querySelector('df-messenger');
+      const shadowRoot = messenger.shadowRoot || messenger.attachShadow({ mode: 'open' });
+      const fab = shadowRoot.querySelector('df-messenger-chat-open-button');
+      if (fab) {
+        fab.click();
+      } else {
+        // Retry in a moment (Shadow DOM may not be ready)
+        setTimeout(openChat, 300);
+      }
+    }
+  </script>
 </body>
 </html>
 
